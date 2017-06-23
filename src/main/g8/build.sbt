@@ -1,5 +1,4 @@
-name := "Hello"
-version := "0.1.0-SNAPSHOT"
+name := "$name$"
 
 scalaVersion := "2.12.2"
 libraryDependencies ++= Seq(
