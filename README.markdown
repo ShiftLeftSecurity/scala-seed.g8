@@ -1,7 +1,7 @@
 This is a [Giter8][g8] template for Scala
 
 ```
-sbt new mpollmeier/scala-seed.g8
+sbt new ShiftLeftSecurity/scala-seed.g8
 ```
 
 License
