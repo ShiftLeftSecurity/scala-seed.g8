@@ -20,6 +20,7 @@ resolvers ++= Seq(
   "Bedatadriven for SOOT dependencies" at "https://nexus.bedatadriven.com/content/groups/public"
 )
 
+publishLocal := publishM2.value // always publish to local maven cache to avoid having to look in too many places when debugging
 publishTo := {
   val jfrog = "https://shiftleft.jfrog.io/shiftleft/"
   if (isSnapshot.value)
