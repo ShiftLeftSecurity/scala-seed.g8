@@ -1,4 +1,5 @@
 name := "$name$"
+organization := "io.shiftleft"
 
 scalaVersion := "2.12.6"
 libraryDependencies ++= Seq(
