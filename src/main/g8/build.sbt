@@ -12,6 +12,7 @@ Test/fork := true
 updateOptions := updateOptions.value.withLatestSnapshots(false)
 updateOptions := updateOptions.value.withCachedResolution(true)
 
+coursierTtl := None //always check for updated snapshots
 resolvers ++= Seq(
   Resolver.mavenLocal,
   "Artifactory snapshot local" at "https://shiftleft.jfrog.io/shiftleft/libs-snapshot-local",
