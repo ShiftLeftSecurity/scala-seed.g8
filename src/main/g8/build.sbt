@@ -31,3 +31,4 @@ publishTo := {
     Some("releases"  at jfrog + "libs-release-local")
 }
 publishMavenStyle := true
+crossPaths := false
