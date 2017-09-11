@@ -6,8 +6,6 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.3" % Test
 )
 scalacOptions ++= Seq("-deprecation", "-feature")
-ThisBuild/scalafmtOnCompile := true
-ThisBuild/scalafmtFailTest := false
 Test/fork := true
 updateOptions := updateOptions.value.withLatestSnapshots(false)
 updateOptions := updateOptions.value.withCachedResolution(true)
