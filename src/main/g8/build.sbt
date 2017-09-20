@@ -7,8 +7,6 @@ libraryDependencies ++= Seq(
 )
 scalacOptions ++= Seq("-deprecation", "-feature")
 Test/fork := true
-updateOptions := updateOptions.value.withLatestSnapshots(false)
-updateOptions := updateOptions.value.withCachedResolution(true)
 
 coursierTtl := None //always check for updated snapshots
 resolvers ++= Seq(
