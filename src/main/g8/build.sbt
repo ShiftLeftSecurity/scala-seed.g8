@@ -28,3 +28,7 @@ publishTo := {
 }
 publishMavenStyle := true
 crossPaths := false
+
+// Disable scaladoc generation / publishing
+Compile/doc/sources := Seq.empty
+Compile/packageDoc/publishArtifact := false
