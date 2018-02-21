@@ -21,10 +21,12 @@ resolvers ++= Seq(
 publishLocal := publishM2.value // always publish to local maven cache to avoid having to look in too many places when debugging
 publishTo := {
   val jfrog = "https://shiftleft.jfrog.io/shiftleft/"
-  if (isSnapshot.value)
-    Some("snapshots" at jfrog + "libs-snapshot-local")
-  else
+  val buildTimestampSuffix = ";build.timestamp=" + new java.util.Date().getTime
+  if (isSnapshot.value) {
+    Some("snapshots" at jfrog + "libs-snapshot-local" + buildTimestampSuffix)
+  } else {
     Some("releases"  at jfrog + "libs-release-local")
+  }
 }
 publishMavenStyle := true
 crossPaths := false
