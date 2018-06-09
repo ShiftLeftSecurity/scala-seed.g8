@@ -1,6 +1,6 @@
 name := "$name$"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.6"
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.3" % Test
 )
